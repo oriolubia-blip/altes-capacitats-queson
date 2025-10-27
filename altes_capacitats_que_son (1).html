@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Altes Capacitats — Guia definitiva per a famílies i docents</title>
+<style>
+  :root{
+    --bg:#fff7ec; /* crema pastel */
+    --card:#ffffff;
+    --muted:#6b5f57;
+    --menu:#7fd6cf; /* turquesa pastel */
+    --accent1:#f8ead2; --accent2:#fdeeea; --accent3:#f3f0ff;
+    --shadow: 0 10px 30px rgba(10,10,10,0.06);
+  }
+  html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#1f2937;line-height:1.5;}
+  .wrap{max-width:1150px;margin:20px auto;padding:18px;}
+  header{background:var(--menu);color:#04333a;padding:20px;border-radius:14px;box-shadow:var(--shadow);position:sticky;top:12px;z-index:20;}
+  header h1{margin:0;font-size:22px;font-weight:800;}
+  nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .navbtn{background:rgba(255,255,255,0.7);border:0;padding:10px 14px;border-radius:10px;color:#04333a;cursor:pointer;font-weight:700;box-shadow:0 2px 6px rgba(2,6,23,0.04);}
+  .navbtn.active{background:white;color:var(--menu);transform:translateY(-2px);}
+  main{margin-top:20px;display:block;gap:18px;}
+  .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 24px rgba(12,15,20,0.04);margin-bottom:26px;}
+  h2{margin-top:0;}
+  .big-visual{width:100%;height:420px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--accent2),white);box-shadow:0 8px 24px rgba(12,15,20,0.03);margin-top:18px;}
+  .big-visual svg{width:94%;height:94%;}
+  details{background:#fff;padding:12px;border-radius:10px;margin-top:10px;border-left:4px solid var(--accent3);}
+  summary{font-weight:800;cursor:pointer;}
+  .faq-list details{background:#fffefc;border-left:4px solid #f3f0ff;}
+  .small{font-size:14px;color:var(--muted);}
+  .resources-list a{color:#035755;font-weight:700;text-decoration:none;}
+  footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px;padding:18px 0;}
+  .long-space{height:200px;} /* ensures page is long visually */
+  @media (max-width:980px){ .big-visual{height:320px} }
+</style>
+</head>
+<body>
+<div class="wrap" role="main">
+  <header aria-label="Capçalera principal">
+    <h1>Altes Capacitats — Guia definitiva per a famílies i docents</h1>
+    <nav aria-label="Navegació principal">
+      <button class="navbtn active" data-target="intro">Què són</button>
+      <button class="navbtn" data-target="detectar">Com detectar-les</button>
+      <button class="navbtn" data-target="tipus">Tipus</button>
+      <button class="navbtn" data-target="recursos">Recursos</button>
+      <button class="navbtn" data-target="questionari">Questionari</button>
+      <button class="navbtn" data-target="faqs">FAQs</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO: full-width text then image -->
+    <section id="intro" class="card" tabindex="0" aria-labelledby="intro-title">
+      <h2 id="intro-title">Què són les altes capacitats?</h2>
+      <p class="small">Aquesta secció està pensada per aclarir conceptes bàsics i respondre els dubtes més comuns de les famílies. Llegiu amb calma i, si us cal, compartiu els punts rellevants amb el tutor/a o l'equip d'orientació.</p>
+
+      <div>
+        <p><strong>Definició ampliada:</strong> Les altes capacitats són un conjunt de trets que inclouen habilitats cognitives superiors a la mitjana, pensament creatiu, curiositat intensa i sovint una sensibilitat emocional notable. Afecten la manera de percebre, processar i utilitzar la informació. No es redueixen a obtenir bones notes; impliquen una forma particular de pensar i aprendre.</p>
+
+        <p><strong>Com poden manifestar-se?</strong> Alguns infants aprenen amb molta rapidesa, estableixen connexions abstractes que sorprenen els adults, mostren interessos molt intensos en temes específics o presenten una gran creativitat. També poden experimentar avorriment escolar, frustració o sentir-se diferents del grup.</p>
+
+        <p><strong>Mites i realitats:</strong></p>
+        <ul class="small">
+          <li><strong>Mite:</strong> Tots els alumnes amb altes capacitats tenen un rendiment excel·lent a l'escola. <strong>Realitat:</strong> El rendiment pot ser desigual, especialment si no hi ha estímul o si apareixen dificultats emocionals.</li>
+          <li><strong>Mite:</strong> Ser precoç és el mateix que ser superdotat. <strong>Realitat:</strong> La precocitat pot ser temporal; la superdotació és un perfil més estable.</li>
+          <li><strong>Mite:</strong> Les altes capacitats són només cognitives. <strong>Realitat:</strong> Inclou aspectes emocionals i socials que cal considerar.</li>
+        </ul>
+
+        <p class="small">Si després de llegir això tens dubtes, és recomanable anotar exemples concrets del comportament de l'alumne (situacions, respostes, preguntes destacades) per portar-los a la reunió amb l'escola o amb el professional.</p>
+      </div>
+
+      <div class="big-visual" aria-hidden="false" role="img" aria-label="Il·lustració nen pensant">
+        <!-- SVG: nen pensant en paleta crema, estil dibuix simple -->
+        <svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dibuix simple nen pensant">
+          <rect width="100%" height="100%" fill="#fffaf5"/>
+          <g transform="translate(60,40)" stroke="#6a5a52" stroke-width="2" fill="none">
+            <ellipse cx="210" cy="90" rx="74" ry="86" fill="#fbeccd" stroke="#6a5a52"/>
+            <path d="M160 70 q40 -40 100 -10" fill="#f3d7c4" stroke="#6a5a52"/>
+            <rect x="150" y="170" width="140" height="120" rx="22" fill="#fdebd6" stroke="#6a5a52"/>
+            <circle cx="360" cy="120" r="42" fill="#fff2d9" stroke="#6a5a52"/>
+            <path d="M360 100 v-18 M350 86 l24 10 M370 86 l-24 10" stroke="#6a5a52" stroke-linecap="round"/>
+            <path d="M290 185 q60 -40 120 -50" stroke="#6a5a52" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- DETECTAR -->
+    <section id="detectar" class="card" style="display:none" tabindex="0">
+      <h2>Com detectar-les</h2>
+      <p>La detecció s’apropa des de diferents fonts: observacions familiars, informes docents i avaluacions professionals. No hi ha un únic indicador: es tracta d’un conjunt de senyals.</p>
+
+      <div>
+        <h3 class="small">Senys freqüents</h3>
+        <ul class="small">
+          <li>Aprenentatge ràpid i capacitat per generalitzar conceptes.</li>
+          <li>Preguntes profundes, curiositat persistent.</li>
+          <li>Vocabulari avançat i pensament abstracte.</li>
+          <li>Interessos intensos i concentració en allò que li apassiona.</li>
+          <li>Perfecionisme, sensibilitat emocional o inquietuds socials.</li>
+        </ul>
+
+        <details><summary>Passos pràctics per a famílies i docents</summary>
+          <p class="small">Compartir observacions, recopilar exemples concrets, sol·licitar una orientació psicopedagògica i provar adaptacions educatives bàsiques (tasques d'enriquiment, agrupaments, treballs per projectes).</p>
+        </details>
+      </div>
+
+      <div class="big-visual" aria-hidden="false" role="img" aria-label="Il·lustració docents amb llista">
+        <!-- SVG docent amb llista (dibuix simple) -->
+        <svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="#fffef9"/>
+          <g transform="translate(40,30)" stroke="#5c514a" stroke-width="2" fill="none">
+            <rect x="20" y="40" width="320" height="300" rx="20" fill="#fff4e8" stroke="#5c514a"/>
+            <circle cx="70" cy="90" r="12" fill="#fdebd6" stroke="#5c514a"/>
+            <rect x="110" y="80" width="180" height="18" rx="8" fill="#fff" stroke="#5c514a"/>
+            <circle cx="70" cy="130" r="12" fill="#fdebd6" stroke="#5c514a"/>
+            <rect x="110" y="120" width="180" height="18" rx="8" fill="#fff" stroke="#5c514a"/>
+            <path d="M360 200 q80 -100 160 -20" stroke="#5c514a" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- TIPUS: each type has details -->
+    <section id="tipus" class="card" style="display:none" tabindex="0">
+      <h2>Tipus d'altes capacitats</h2>
+      <p class="small">A continuació s’explica cada perfil i les seves característiques bàsiques. Obriu cada desplegable per llegir detalls i recomanacions.</p>
+
+      <details><summary>Superdotació</summary>
+        <p class="small"><strong>Què és:</strong> Funcionament intel·lectual globalment elevat en diverses àrees (raonament, memòria, creativitat).</p>
+        <p class="small"><strong>Característiques:</strong> ràpid aprenentatge, pensament abstracte, curiositat extensa, necessitat d'estímuls diversos.</p>
+        <p class="small"><strong>Recomanacions:</strong> programes d'enriquiment, tasques complexes, suport emocional.</p>
+      </details>
+
+      <details><summary>Talent simple</summary>
+        <p class="small"><strong>Què és:</strong> Rendiment excepcional en una sola àrea (música, art, matemàtiques...).</p>
+        <p class="small"><strong>Característiques:</strong> motivació intensa per l'àrea, rapidesa en l'aprenentatge específic, possible descompensació en altres matèries.</p>
+        <p class="small"><strong>Recomanacions:</strong> oferir oportunitats de profundització i mentors en l'àrea.</p>
+      </details>
+
+      <details><summary>Talent compost</summary>
+        <p class="small"><strong>Què és:</strong> Altes capacitats en dues o més àrees combinades.</p>
+        <p class="small"><strong>Característiques:</strong> versatilitat, capacitat de transferència entre àmbits, necessitat d'activitats multidisciplinàries.</p>
+        <p class="small"><strong>Recomanacions:</strong> projectes que integrin disciplines i flexibilitat curricular.</p>
+      </details>
+
+      <details><summary>Precocitat intel·lectual</summary>
+        <p class="small"><strong>Què és:</strong> Desenvolupament avançat respecte a la cronologia habitual (per exemple, lectura precoç).</p>
+        <p class="small"><strong>Característiques:</strong> aprenentatges inicials avançats; cal observar si es manté.</p>
+        <p class="small"><strong>Recomanacions:</strong> seguiment, estímuls adequats i avaluació longitudinal.</p>
+      </details>
+
+      <details><summary>Doble excepcionalitat</summary>
+        <p class="small"><strong>Què és:</strong> Coexistència d'altes capacitats amb una dificultat (DSA, TDAH, TEA, trastorn emocional).</p>
+        <p class="small"><strong>Característiques:</strong> perfils asimètrics, sovint confusió diagnòstica; el talent pot enmascarar la dificultat i viceversa.</p>
+        <p class="small"><strong>Recomanacions:</strong> avaluació multiprofessional, pla coexistint suport per la dificultat i potenciació de les fortaleses.</p>
+      </details>
+
+      <div class="big-visual" aria-hidden="false" role="img" aria-label="Il·lustracions tipus">
+        <!-- SVG icons for types (simple drawings) -->
+        <svg viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="#fffaf6"/>
+          <g transform="translate(60,40)">
+            <circle cx="80" cy="80" r="70" fill="#fff2d9" stroke="#6a5a52"/>
+            <text x="0" y="170" font-size="16" fill="#6a5a52">Superdotació</text>
+          </g>
+          <g transform="translate(300,40)">
+            <rect x="0" y="0" width="160" height="160" rx="20" fill="#f0fff4" stroke="#5b6b63"/>
+            <text x="10" y="180" font-size="16" fill="#5b6b63">Talent simple</text>
+          </g>
+          <g transform="translate(560,40)">
+            <ellipse cx="80" cy="80" rx="70" ry="60" fill="#fff8ec" stroke="#7a5a2b"/>
+            <text x="10" y="180" font-size="16" fill="#7a5a2b">Talent compost</text>
+          </g>
+          <g transform="translate(820,40)">
+            <rect x="20" y="20" width="120" height="120" rx="60" fill="#fbf5ff" stroke="#6b4860"/>
+            <text x="10" y="170" font-size="16" fill="#6b4860">Precocitat</text>
+          </g>
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- RECURSOS: fixed list (no editing) -->
+    <section id="recursos" class="card" style="display:none" tabindex="0">
+      <h2>Recursos i contactes</h2>
+      <p class="small">Enllaços i entitats recomanades per iniciar un acompanyament o buscar informació addicional.</p>
+      <ul class="resources-list small">
+        <li><a href="https://altascapacique.com/" target="_blank" rel="noopener">altascapacique.com</a> — Informació i recursos sobre altes capacitats.</li>
+        <li><a href="http://www.somosacai.com" target="_blank" rel="noopener">www.somosacai.com</a> — Associació i materials per a famílies i docents.</li>
+        <li>Equip d'orientació i psicopedagogs/es de la teva escola o districte.</li>
+        <li>Especialistes privats amb experiència en psicodiagnòstic i orientació per altes capacitats.</li>
+      </ul>
+
+      <div class="big-visual" aria-hidden="false" role="img" aria-label="Il·lustració recursos i connexió">
+        <svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="#fffdf8"/>
+          <g transform="translate(60,40)" stroke="#5a4f48" fill="none" stroke-width="2">
+            <circle cx="80" cy="80" r="56" fill="#fdebd6" stroke="#5a4f48"/>
+            <circle cx="240" cy="80" r="56" fill="#fff2d9" stroke="#5a4f48"/>
+            <circle cx="400" cy="80" r="56" fill="#f0fff4" stroke="#5a4f48"/>
+            <path d="M130 140 q110 40 220 0" stroke="#5a4f48" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- QUESTIONARI: add 5 more to reach 13 total -->
+    <section id="questionari" class="card" style="display:none" tabindex="0">
+      <h2>Questionari orientatiu</h2>
+      <p class="small">Aquest qüestionari és orientatiu i no substitueix una avaluació professional. Marca les respostes que consideris que apliquen a l'alumne/a.</p>
+
+      <div id="qwrap" style="margin-top:10px;"></div>
+
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center;">
+        <button id="calc" class="navbtn">Calcula resultat</button>
+        <div id="result" class="small" aria-live="polite"></div>
+      </div>
+
+      <div class="big-visual" aria-hidden="false" role="img" aria-label="Il·lustració formulari">
+        <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="#fffaf6"/>
+          <g transform="translate(60,40)" stroke="#5b5046" fill="none" stroke-width="2">
+            <rect x="20" y="40" width="360" height="240" rx="18" fill="#fff8ec" stroke="#5b5046"/>
+            <rect x="40" y="70" width="300" height="22" rx="10" fill="#fff" stroke="#5b5046"/>
+            <rect x="40" y="110" width="260" height="22" rx="10" fill="#fff" stroke="#5b5046"/>
+            <rect x="40" y="150" width="200" height="22" rx="10" fill="#fff" stroke="#5b5046"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- FAQS: 20+ detailed FAQs -->
+    <section id="faqs" class="card" style="display:none" tabindex="0">
+      <h2>Preguntes freqüents (FAQs)</h2>
+      <p class="small">Clica cada pregunta per desplegar la resposta completa; les respostes estan pensades per a famílies i docents.</p>
+      <div class="faq-list" style="margin-top:12px;">
+<details><summary>Tots els nens amb bones notes tenen altes capacitats?</summary><p class="small">No. Les notes mesuren rendiment en unes condicions concretes. Molts factors afecten les qualificacions: motivació, organització, estils d’ensenyament i suport familiar. Les altes capacitats es refereixen a la forma d’aprendre i pensar; sense estímul, un infant altament capaç pot obtenir resultats acomodats o irregulars.</p></details>\n<details><summary>Quina diferència hi ha entre precocitat i superdotació?</summary><p class="small">La precocitat és un avançament en una etapa (per exemple, lectura precoç). Pot ser temporal. La superdotació és un perfil més estable que implica una manera persistent d’aprendre i processar informació. S’ha de fer seguiment per distingir-los amb certesa.</p></details>\n<details><summary>Com parlar amb l'escola sense etiquetar el meu fill/a?</summary><p class="small">Sigues concret: porta exemples observables (qüestions que fa, interessos, reaccions a activitats). Demana orientacions i suggeriments pràctics per adaptar l'aprenentatge; l'objectiu és la col·laboració, no l'etiquetatge.</p></details>\n<details><summary>Són fiables els tests d'intel·ligència?</summary><p class="small">Els tests com el WISC o WPPSI són eines útils que ofereixen informació sobre el perfil cognitiu. No són únics ni infal·libles: la interpretació professional ha de integrar observacions escolars, emocionals i d’interès.</p></details>\n<details><summary>Què puc fer si el meu fill/a s'avorreix a classe?</summary><p class="small">Comunica-ho amb el docent: proposeu tasques d'enriquiment, projectes independents o reptes específics. També podeu fomentar activitats a casa que li donin oportunitats d'exploració i profundització.</p></details>\n<details><summary>Les altes capacitats impliquen habilitats socials superiors?</summary><p class="small">No necessàriament. Alguns alumnes tenen facilitat social; altres, en canvi, poden sentir-se aïllats o tenir dificultats per connectar amb iguals. És important treballar habilitats socials i buscar grups amb interessos similars.</p></details>\n<details><summary>Com detectar la doble excepcionalitat?</summary><p class="small">La doble excepcionalitat combina altes capacitats amb dificultats com DSA, TDAH o TEA. Pot passar desapercebuda perquè els punts forts enmascaren les dificultats o al revés. Es requereix avaluació multiprofessional per fer un diagnòstic complet.</p></details>\n<details><summary>Quan demanar una avaluació psicopedagògica?</summary><p class="small">Si observeu indicis persistents (rapidesa d'aprenentatge, avorriment crònic, ansietat relacionada amb l'escola), és recomanable sol·licitar una avaluació per obtenir orientacions específiques.</p></details>\n<details><summary>Pot un infant tenir talent només en una àrea?</summary><p class="small">Sí: s'anomena talent simple. És important donar opcions per desenvolupar aquell talent sense descuidar l'educació global.</p></details>\n<details><summary>Quines adaptacions escolars són més efectives?</summary><p class="small">Enriquiment curricular, acceleració parcial, agrupaments flexibles, treballs per projectes i suport socioemocional acostumen a ser efectius quan s'apliquen adaptadament.</p></details>\n<details><summary>Com prevenir l'excés de perfeccionisme?</summary><p class="small">Fomenteu una cultura de l'error com a aprenentatge, establiu reptes progressius i valoreu el procés. El suport emocional o psicoterapèutic pot ser necessari si el perfeccionisme és paralitzant.</p></details>\n<details><summary>Les altes capacitats es poden detectar en contextos amb menys recursos?</summary><p class="small">Sí. Les capacitats no desapareixen per l'entorn, però poden quedar ocultes per falta d'oportunitats. L'observació acurada i proves adaptades són essencials.</p></details>\n<details><summary>Com ajudar a casa sense pressionar massa?</summary><p class="small">Ofereix oportunitats d'aprenentatge autònom, escolta els interessos reals, evita comparacions i celebra l'esforç i la curiositat.</p></details>\n<details><summary>Quines activitats extraescolars són recomanables?</summary><p class="small">Tallers de ciència, clubs de robòtica, tallers d’escriptura, música, art i concursos acadèmics són bones opcions si són de qualitat i ofereixen repte real.</p></details>\n<details><summary>Com pot l'escola adaptar-se si no té recursos específics?</summary><p class="small">Moltes adaptacions senzilles són possibles: treballs opcionals d'enriquiment, agrupaments temporals, projectes d'investigació. A més, cercar suports externs (associacions, professionals) és una opció.</p></details>\n<details><summary>És millor que el nen/a sàpiga que té altes capacitats?</summary><p class="small">Depèn de l'edat i del context. Explicar-ho de manera positiva i sense pressió pot ser beneficiós. Eviteu etiquetes que generin expectatives extremes.</p></details>\n<details><summary>Puc confiar només en l'opinió d'un docent?</summary><p class="small">La visió d'un docent és valuosa, però la millor pràctica és combinar observacions de diferents contextos (casa, escola) i, si cal, una avaluació professional.</p></details>\n<details><summary>Quins senyals poden indicar alta creativitat?</summary><p class="small">Idees noves, connexions inesperades entre conceptes, resolució de problemes de manera original i interès persistent en activitats creatives.</p></details>\n<details><summary>Com equilibrar desenvolupament acadèmic i emocional?</summary><p class="small">Combineu estratègies acadèmiques amb suport emocional: treball per projectes, temps per explorar interessos i acompanyament en regulació emocional.</p></details>\n<details><summary>Què cal tenir en compte per a adolescents amb altes capacitats?</summary><p class="small">L'adolescència pot ser complicada: qüestions d'identitat, ansietat i pressions socials poden aparèixer. Un acompanyament específic i opcions acadèmiques adaptades ajuden a mantenir la motivació.</p></details>\n<details><summary>Com es pot treballar amb la família i la comunitat?</summary><p class="small">Crear xarxes amb altres famílies, participar en associacions i buscar activitats comunitàries que ofereixin reptes i oportunitats socials és molt útil.</p></details>\n<details><summary>Què fer si sospito d'un problema combinat (DSA + alta capacitat)?</summary><p class="small">Sol·liciteu una avaluació multiprofessional per identificar amb claredat les necessitats i establir un pla que atengui tant les fortaleses com les dificultats.</p></details>\n
+      </div>
+    </section>
+
+    <div class="long-space"></div> <!-- Forces scroll: visual extra space -->
+
+  </main>
+
+  <footer>
+    Versió definitiva — Guia en català per a famílies i docents. Contingut resumit i orientatiu; per a decisions d'avaluació, contacteu amb professionals.
+  </footer>
+</div>
+
+<script>
+// Navigation behavior
+const navBtns = document.querySelectorAll('.navbtn');
+navBtns.forEach(b=>b.addEventListener('click', (e)=>{
+  navBtns.forEach(x=>x.classList.remove('active'));
+  e.currentTarget.classList.add('active');
+  const t = e.currentTarget.getAttribute('data-target');
+  document.querySelectorAll('main > section').forEach(s=> s.style.display = 'none');
+  const target = document.getElementById(t);
+  if(target) target.style.display = 'block';
+  window.location.hash = t;
+}));
+// Initial: show intro
+if(location.hash){
+  const h = location.hash.replace('#','');
+  const btn = Array.from(navBtns).find(b=>b.getAttribute('data-target')===h);
+  if(btn) btn.click();
+}
+
+// Questionari: 13 preguntes (8 originals +5 addicionals)
+const preguntes = [
+  "L’infant aprèn nous conceptes amb molta rapidesa?",
+  "Mostra una gran curiositat i fa preguntes profundes?",
+  "Té un vocabulari molt ric per la seva edat?",
+  "S’avorreix fàcilment amb activitats repetitives?",
+  "Mostra una sensibilitat emocional elevada o perfeccionisme?",
+  "Té una gran imaginació i creativitat?",
+  "Es relaciona millor amb persones més grans que amb iguals de la seva edat?",
+  "Resol problemes amb estratègies originals?",
+  "Mostra gran persistència en temes que li interessen?",
+  "Té facilitat per recordar dades i detalls?",
+  "Mostra un sentit de la justícia molt desenvolupat?",
+  "Es frustra ràpidament si la tasca no és un repte?",
+  "Té una gran capacitat d’atenció en allò que l’apassiona?"
+];
+const qwrap = document.getElementById('qwrap');
+preguntes.forEach((p,idx)=>{
+  const div = document.createElement('div');
+  div.style.marginBottom = '8px';
+  div.innerHTML = `<input type="checkbox" id="q${idx}" /> <label for="q${idx}">${p}</label>`;
+  qwrap.appendChild(div);
+});
+document.getElementById('calc').addEventListener('click', ()=>{
+  const checks = Array.from(document.querySelectorAll('#qwrap input[type=checkbox]'));
+  const score = checks.filter(c=>c.checked).length;
+  const res = document.getElementById('result');
+  res.textContent = `Resultat: ${score} respostes afirmatives.`;
+  if(score >= 9) res.innerHTML += ' <strong style="color:#f59e0b">Hi ha indicis importants que justifiquin una avaluació professional.</strong>';
+  else if(score >= 5) res.innerHTML += ' <strong style="color:orange">Hi ha indicis que podrien justificar una avaluació.</strong>';
+  else res.innerHTML += ' <span style="color:var(--muted)">No sembla haver-hi indicis clars, encara que si hi ha preocupacions consulteu un professional.</span>';
+});
+
+// Accessibility: allow summary keyboard toggle
+document.querySelectorAll('summary').forEach(s => { s.addEventListener('keypress', (e)=> { if(e.key==='Enter') s.click(); }); });
+
+</script>
+</body>
+</html>
